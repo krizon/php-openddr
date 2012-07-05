@@ -1,0 +1,19 @@
+{
+    "name": "krizon/php-openddr",
+    "description": "PHP implementation for the Open Device Detection Repository",
+    "authors": [
+        {
+            "name": "Kristian Zondervan",
+            "email": "kristian.zondervan@gmail.com"
+        }
+    ],
+    "require": {
+        "krizon/php-w3c-ddr-simple-api": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/krizon/php-w3c-ddr-simple-api.git"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "hash": "9c245fe29b26db4f3141c04eb5bbe1b6",
+    "packages": [
+        {
+            "package": "krizon/php-w3c-ddr-simple-api",
+            "version": "dev-master",
+            "source-reference": "cbb8417d797c0f44d4afc8b1c2282a2445d1de24",
+            "commit-date": "1341517531"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "krizon/php-w3c-ddr-simple-api": 20
+    }
+}
