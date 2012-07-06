@@ -1,11 +1,11 @@
 {
-    "hash": "9c245fe29b26db4f3141c04eb5bbe1b6",
+    "hash": "943c9446a5b833560b14d0822e24761c",
     "packages": [
         {
             "package": "krizon/php-w3c-ddr-simple-api",
             "version": "dev-master",
-            "source-reference": "cbb8417d797c0f44d4afc8b1c2282a2445d1de24",
-            "commit-date": "1341517531"
+            "source-reference": "f54dad04b39f470e89d8a4faabdd1c93192ecf61",
+            "commit-date": "1341601839"
         }
     ],
     "packages-dev": null,
