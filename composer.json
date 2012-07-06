@@ -15,5 +15,8 @@
             "type": "git",
             "url": "git://github.com/krizon/php-w3c-ddr-simple-api.git"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": { "OpenDDR\\": "src/" }
+    }
 }
