@@ -1,5 +1,5 @@
 {
-    "hash": "943c9446a5b833560b14d0822e24761c",
+    "hash": "29ae077e9f270c78b717f052839449d6",
     "packages": [
         {
             "package": "krizon/php-w3c-ddr-simple-api",
@@ -12,7 +12,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "krizon/php-w3c-ddr-simple-api": 20
     }
