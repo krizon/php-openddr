@@ -73,7 +73,6 @@ class UserAgent
         if ($result) {
             $this->patternElements = $result;
             $version = $result[3];
-
             if (false !== strpos($result[2], 'Opera')) {
                 $this->mozillaPattern = false;
                 $this->operaPattern = true;
@@ -194,7 +193,7 @@ class UserAgent
      */
     public function getMozillaPattern()
     {
-        return $this->mozillaPattern;
+        return (bool) $this->mozillaPattern;
     }
 
     /**
@@ -210,7 +209,7 @@ class UserAgent
      */
     public function getOperaPattern()
     {
-        return $this->operaPattern;
+        return (bool) $this->operaPattern;
     }
 
     /**

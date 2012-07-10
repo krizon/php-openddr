@@ -63,7 +63,7 @@ class UserAgentTest extends \PHPUnit_Framework_TestCase
 
     public function testContainsWindowsPhone()
     {
-        $userAgent = new UserAgent('Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0;');
+        $userAgent = new UserAgent('Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0;)');
         $this->assertTrue($userAgent->getContainsWindowsPhone());
         $userAgent = new UserAgent('Mozilla/5.0 (Windows NT 6.2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1 Safari/534.50');
         $this->assertTrue($userAgent->getContainsWindowsPhone());
@@ -79,7 +79,19 @@ class UserAgentTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($userAgent->getOperaPattern());
         $this->assertSame('12.00', $userAgent->getOperaVersion());
 
-        $userAgent = new UserAgent('Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0;');
+        $userAgent = new UserAgent('Opera/9.64 (X11; Linux x86_64; U; de) Presto/2.1.1');
+        $this->assertFalse($userAgent->getMozillaPattern());
+        $this->assertNull($userAgent->getMozillaVersion());
+        $this->assertTrue($userAgent->getOperaPattern());
+        $this->assertSame('9.64', $userAgent->getOperaVersion());
+
+        $userAgent = new UserAgent('Mozilla/5.0 (Windows NT 6.2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1 Safari/534.50');
+        $this->assertTrue($userAgent->getMozillaPattern());
+        $this->assertSame('5.0', $userAgent->getMozillaVersion());
+        $this->assertFalse($userAgent->getOperaPattern());
+        $this->assertNull($userAgent->getOperaVersion());
+
+        $userAgent = new UserAgent('Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0;)');
         $this->assertTrue($userAgent->getMozillaPattern());
         $this->assertSame('4.0', $userAgent->getMozillaVersion());
         $this->assertFalse($userAgent->getOperaPattern());
