@@ -8,7 +8,10 @@
         }
     ],
     "require": {
-        "krizon/php-w3c-ddr-simple-api": "dev-master"
+        "krizon/php-w3c-ddr-simple-api": "dev-master",
+        "symfony/finder": "dev-master",
+        "symfony/filesystem": "dev-master",
+        "symfony/console": "dev-master"
     },
     "repositories": [
         {
